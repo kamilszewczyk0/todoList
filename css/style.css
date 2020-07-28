@@ -7,3 +7,32 @@ html {
 ::before {
   box-sizing: inherit;
 }
+
+body {
+  background-color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section__header--2,
+.section__form,
+.section__header,
+.section__list {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 2px;
+}
+
+.section__form {
+  display: flex;
+}
+
+.section__input {
+  flex-grow: 1;
+}
