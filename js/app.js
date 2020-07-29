@@ -73,11 +73,10 @@
 
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
-    if (newTaskContent === "") {
-      return;
+    if (newTaskContent !== "") {
+      addNewTask(newTaskContent);
+      document.querySelector(".js-form").reset();
     }
-
-    addNewTask(newTaskContent);
   };
 
   const init = () => {
