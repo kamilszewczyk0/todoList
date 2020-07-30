@@ -8,7 +8,7 @@ Basic CRUD-style app, with possibility of adding new tasks, marke them as done, 
 
 ## Tech stack
 * HTML
-* CSS
+* CSS (Flexbox)
 * JavaScript ES6
 * BEM
 
