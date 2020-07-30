@@ -76,6 +76,8 @@
     if (newTaskContent !== "") {
       addNewTask(newTaskContent);
       document.querySelector(".js-form").reset();
+    } else {
+      document.querySelector(".js-newTask").focus();
     }
   };
 
