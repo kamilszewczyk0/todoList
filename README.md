@@ -11,6 +11,7 @@ Basic CRUD-style app, with possibility of adding new tasks, marke them as done, 
 * CSS (Flexbox)
 * JavaScript ES6
 * BEM
+* Responsive Design
 
 ## Questions
 If You have any questions about this project or myself in general, You cand send me a DM through [my Facebook account](https://www.facebook.com/kamil.szewczyk.961/).
