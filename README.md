@@ -4,7 +4,7 @@
 [ToDo List - app by K. Szewczyk](https://kamilszewczyk0.github.io/todoList/)
 
 ## Info
-Basic CRUD-style app, with possibility of adding new tasks, marke them as done, and remove them. Created during "FrontEnd developer od podstaw" course by YouCode. Project will be continiued.
+Basic CRUD-style app, with possibility of adding new tasks, marke them as done, and remove them. Created during "FrontEnd developer od podstaw" course by YouCode.
 
 ## Tech stack
 * HTML
