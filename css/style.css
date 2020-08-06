@@ -29,6 +29,7 @@ body {
 .section__label,
 .section__form,
 .section__header,
+.section__title,
 .section__list {
   background-color: #ffffff;
   padding: 20px;
@@ -59,13 +60,14 @@ body {
   margin-left: 30px;
   padding: 0 20px;
   color: #ffffff;
-  background-color: #007385;
+  background-color: teal;
   border: none;
 }
 
 .section__btn:hover {
   transform: scale(1.04);
-  transition: transform 0.15s;
+  background-color: hsl(180, 100%, 30%);
+  transition: 0.15s;
   cursor: pointer;
 }
 
@@ -82,15 +84,30 @@ body {
   }
 }
 
+.section__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.section__header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .section__list {
   list-style: none;
   padding: 30px 25px;
 }
 
-.section__listElement {
+.task__item {
   margin: 12px;
   display: flex;
   align-items: center;
+}
+
+.tasks__item--hidden {
+  display: none;
 }
 
 .list__doneBtn,
@@ -109,6 +126,11 @@ body {
   background-color: #197a1e;
 }
 
+.list__doneBtn:hover {
+  background-color: hsl(123, 66%, 39%);
+  transition: 0.15s;
+}
+
 .list__task {
   margin: 0;
   flex-basis: 100%;
@@ -118,4 +140,44 @@ body {
 
 .list__removeBtn {
   background-color: #ec2539;
+}
+
+.list__removeBtn:hover {
+  background-color: hsl(354, 84%, 64%);
+  transition: 0.15s;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons__button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0 40px;
+  color: teal;
+  transition: 0.2ss ease-out;
+}
+
+.buttons__button:disabled {
+  color: rgb(196, 195, 195);
+}
+
+.buttons__button:hover {
+  color: hsl(180, 100%, 40%);
+}
+
+@media (max-width: 767px) {
+  .section__header {
+    flex-direction: column;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons__button {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
 }
